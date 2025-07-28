@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Neem J. Lama - Get in touch for collaboration, job opportunities, or project discussions.">
+    <meta name="keywords" content="Contact, Hire, Collaboration, Job Opportunities, Freelance, Computer Science Graduate">
+    <title>Contact - Neem J. Lama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Critical CSS to prevent flash */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(248, 248, 248, 0.95);
+            color: #333;
+            transition: none;
+        }
+        html.dark-theme, html.dark-theme body {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            color: #e0e0e0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <script>
+        // Prevent flash of light theme by applying dark theme immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+                document.documentElement.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+                document.documentElement.style.color = '#e0e0e0';
+                // Also apply to body when it becomes available
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.classList.add('dark-theme');
+                });
+                // Apply immediately if body already exists
+                if (document.body) {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-navbar">
+        <div class="floating-nav-container">
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="projects.html" class="nav-item">
+                <span class="nav-icon">💼</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="skills.html" class="nav-item">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="contact.html" class="nav-item active">
+                <span class="nav-icon">📧</span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a href="contact.html" class="nav-cta-button">
+                <span>Let's Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-title">Let's Connect</h1>
+                <p class="contact-subtitle">Ready to collaborate on your next project or discuss opportunities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="info-title">Get In Touch</h2>
+                    <p class="info-description">
+                        I'm always interested in hearing about new opportunities, projects, 
+                        or just having a conversation about technology and innovation.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <span>📧</span>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">Email</h3>
+                                <p class="method-text">lamaneem64@example.com</p>
+                                <a href="mailto:lamaneem64@example.com" class="method-link">Send Message</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <span>💼</span>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">LinkedIn</h3>
+                                <p class="method-text">Connect with me professionally</p>
+                                <a href="#" class="method-link">View Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <span>💻</span>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">GitHub</h3>
+                                <p class="method-text">Check out my code repositories</p>
+                                <a href="#" class="method-link">View Projects</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <span>📱</span>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">Phone</h3>
+                                <p class="method-text">+977 9869282415</p>
+                                <a href="tel:+9779869282415" class="method-link">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3 class="availability-title">Availability</h3>
+                        <div class="availability-status">
+                            <span class="status-indicator available"></span>
+                            <span class="status-text">Available for new projects</span>
+                        </div>
+                        <p class="availability-note">
+                            Currently open to full-time opportunities, freelance projects, 
+                            and collaborative ventures in software development and AI/ML.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company (Optional)</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="job-opportunity">Job Opportunity</option>
+                                <option value="freelance-project">Freelance Project</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" required 
+                                placeholder="Tell me about your project, opportunity, or how I can help you..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <span class="checkbox-text">Subscribe to occasional updates about my projects and insights</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-icon">→</span>
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">✅</div>
+                        <h3 class="success-title">Message Sent!</h3>
+                        <p class="success-text">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What type of projects do you work on?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I work on a variety of projects including web applications, mobile apps, machine learning solutions, data analysis tools, and API development. I'm particularly interested in projects that involve modern web technologies, AI/ML, and innovative problem-solving.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your typical response time?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I aim to respond to all inquiries within 24 hours during business days. For urgent matters, please mention it in your message subject line, and I'll prioritize your request.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you work with remote teams?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! I have extensive experience working with distributed teams across different time zones. I'm comfortable with various collaboration tools and agile development methodologies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your approach to new technologies?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I'm always eager to learn and adapt to new technologies. I believe in choosing the right tool for the job and am quick to pick up new frameworks, languages, or platforms as needed for specific projects.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can you help with existing projects?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I can assist with debugging, optimization, feature additions, code reviews, and modernization of existing applications. I'm experienced in working with legacy codebases and can help improve performance and maintainability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide ongoing support?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I offer various support arrangements including maintenance contracts, on-call support, and long-term partnerships. We can discuss the best arrangement based on your specific needs and project requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="social-section">
+        <div class="container">
+            <div class="social-content">
+                <h2 class="social-title">Connect With Me</h2>
+                <p class="social-description">Follow my journey and stay updated with my latest projects</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" target="_blank">
+                        <div class="social-icon">💼</div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <div class="social-icon">💻</div>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <div class="social-icon">🐦</div>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <div class="social-icon">📧</div>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neem J. Lama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

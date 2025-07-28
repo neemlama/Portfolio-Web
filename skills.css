@@ -1,0 +1,390 @@
+/* Skills Page Specific Styles */
+
+/* Add smooth transitions to all theme-switching elements */
+.skills-hero,
+.skills-title,
+.skills-subtitle,
+.skills-categories,
+.category-title,
+.skill-card,
+.skill-icon,
+.skill-name,
+.skill-description,
+.skills-summary,
+.summary-title,
+.summary-description,
+.stat-number,
+.stat-label,
+.contact-cta,
+.cta-title,
+.cta-description,
+.cta-button-large {
+    transition: all 0.3s ease;
+}
+
+/* Dark theme styles */
+body.dark-theme .skills-hero {
+    background: #1a1a1a;
+}
+
+body.dark-theme .skills-title {
+    color: #ffffff;
+}
+
+body.dark-theme .skills-subtitle {
+    color: #b0b0b0;
+}
+
+body.dark-theme .skills-categories {
+    background: #2a2a2a;
+}
+
+body.dark-theme .category-title {
+    color: #ffffff;
+}
+
+body.dark-theme .skill-card {
+    background: #3a3a3a;
+}
+
+body.dark-theme .skill-card:hover {
+    border-color: #ffffff;
+}
+
+body.dark-theme .skill-icon {
+    color: #ffffff;
+}
+
+body.dark-theme .skill-name {
+    color: #ffffff;
+}
+
+body.dark-theme .skill-description {
+    color: #b0b0b0;
+}
+
+body.dark-theme .skills-summary {
+    background: #1a1a1a;
+}
+
+body.dark-theme .summary-title {
+    color: #ffffff;
+}
+
+body.dark-theme .summary-description {
+    color: #b0b0b0;
+}
+
+body.dark-theme .stat-number {
+    color: #ffffff;
+}
+
+body.dark-theme .stat-label {
+    color: #b0b0b0;
+}
+
+body.dark-theme .contact-cta {
+    background: #2a2a2a;
+}
+
+body.dark-theme .cta-title {
+    color: #ffffff;
+}
+
+body.dark-theme .cta-description {
+    color: #b0b0b0;
+}
+
+body.dark-theme .cta-button-large {
+    background: #ffffff;
+    color: #222;
+}
+
+body.dark-theme .cta-button-large:hover {
+    background: #e0e0e0;
+}
+
+/* Skills Hero Section */
+.skills-hero {
+    min-height: 50vh;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+}
+
+.skills-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #222;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.skills-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Skills Categories */
+.skills-categories {
+    padding: 5rem 0;
+    background: white;
+}
+
+.category-section {
+    margin-bottom: 5rem;
+}
+
+.category-section:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    color: #222;
+}
+
+.skill-icon i {
+    color: inherit;
+}
+
+.custom-icon {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.skill-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.skill-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Skills Summary */
+.skills-summary {
+    padding: 5rem 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.summary-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.summary-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 2rem;
+}
+
+.summary-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.learning-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Contact CTA */
+.contact-cta {
+    padding: 5rem 0;
+    background: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.cta-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+.cta-button-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #222;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button-large:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+    color: #222;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 3rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skill-card {
+        padding: 1.5rem;
+    }
+    
+    .category-title {
+        font-size: 2rem;
+    }
+    
+    .learning-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-hero {
+        padding-top: 6rem;
+    }
+    
+    .skills-title {
+        font-size: 2.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-icon {
+        font-size: 2.5rem;
+    }
+    
+    .skill-name {
+        font-size: 1.3rem;
+    }
+    
+    .summary-title,
+    .cta-title {
+        font-size: 2rem;
+    }
+}
+
+/* DevIcon specific colors */
+.devicon-python-plain { color: #3776ab; }
+.devicon-javascript-plain { color: #f7df1e; }
+.devicon-java-plain { color: #ed8b00; }
+.devicon-cplusplus-plain { color: #00599c; }
+.devicon-typescript-plain { color: #3178c6; }
+.devicon-go-plain { color: #00add8; }
+.devicon-react-original { color: #61dafb; }
+.devicon-nodejs-plain { color: #339933; }
+.devicon-django-plain { color: #092e20; }
+.devicon-html5-plain { color: #e34f26; }
+.devicon-css3-plain { color: #1572b6; }
+.devicon-mongodb-plain { color: #47a248; }
+.devicon-tensorflow-original { color: #ff6f00; }
+.devicon-pytorch-original { color: #ee4c2c; }
+.devicon-pandas-original { color: #150458; }
+.devicon-numpy-original { color: #013243; }
+.devicon-git-plain { color: #f05032; }
+.devicon-docker-plain { color: #2496ed; }
+.devicon-amazonwebservices-original { color: #ff9900; }
+.devicon-linux-plain { color: #fcc624; }
+.devicon-vscode-plain { color: #007acc; }

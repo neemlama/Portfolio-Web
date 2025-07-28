@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="demo.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem J. Lama - Computer Science Graduate & Full-Stack Developer. Specialized in AI/ML, web development, and modern software solutions.">
+    <meta name="keywords" content="Computer Science, Full-Stack Developer, AI, Machine Learning, React, Python, JavaScript, Portfolio">
+    <meta name="author" content="Neem J. Lama">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Neem J. Lama - CS Graduate & Developer">
+    <meta property="og:description" content="Computer Science Graduate & Full-Stack Developer specialized in AI/ML and modern web technologies.">
+    <meta property="og:image" content="assets/pp-rbg.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Neem J. Lama - CS Graduate & Developer">
+    <meta property="twitter:description" content="Computer Science Graduate & Full-Stack Developer specialized in AI/ML and modern web technologies.">
+    <meta property="twitter:image" content="assets/pp-rbg.png">
+    
+    <title>Neem J. Lama - CS Graduate & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Critical CSS to prevent flash */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(248, 248, 248, 0.95);
+            color: #333;
+            transition: none;
+        }
+        html.dark-theme, html.dark-theme body {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            color: #e0e0e0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Prevent flash of light theme by applying dark theme immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+                document.documentElement.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+                document.documentElement.style.color = '#e0e0e0';
+                // Also apply to body when it becomes available
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.classList.add('dark-theme');
+                });
+                // Apply immediately if body already exists
+                if (document.body) {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        })();
+    </script>
+</head>
+<body class="has-floating-dock">
+    <!-- Floating Navigation -->
+    <nav class="floating-navbar">
+        <div class="floating-nav-container">
+            <a href="index.html" class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="projects.html" class="nav-item">
+                <span class="nav-icon">💼</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="skills.html" class="nav-item">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <span class="nav-icon">📧</span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a href="contact.html" class="nav-cta-button">
+                <span>Let's Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years experience</span>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello</h1>
+                    <p class="hero-subtitle">I'm Neem J. Lama <br> Computer Science Graduate & Developer</p>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <span>Scroll down</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="profile-image-container">
+                    <img src="assets/pp-rbg.png" alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="features-header">
+                <h2 class="features-title">Packed with cutting-edge expertise</h2>
+                <p class="features-subtitle">From algorithm optimization to machine learning implementations, I have mastered the core concepts of computer science. Ready to build the next generation of software solutions.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: Algorithm & Data Structures -->
+                <div class="feature-card feature-large">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Algorithm optimization</h3>
+                        <p class="feature-description">Design and implement efficient algorithms with optimal time and space complexity for complex computational problems.</p>
+                    </div>
+                    <div class="feature-skeleton">
+                        <div class="skeleton-one">
+                            <div class="project-preview">
+                                <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800" alt="Algorithm Visualization" class="preview-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Machine Learning -->
+                <div class="feature-card feature-medium">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Machine Learning models</h3>
+                        <p class="feature-description">Build and deploy ML models using TensorFlow, PyTorch, and scikit-learn for predictive analytics and pattern recognition.</p>
+                    </div>
+                    <div class="feature-skeleton">
+                        <div class="skeleton-two">
+                            <div class="image-gallery">
+                                <div class="gallery-row">
+                                    <div class="gallery-item" style="transform: rotate(-8deg);">
+                                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400" alt="Neural Network">
+                                    </div>
+                                    <div class="gallery-item" style="transform: rotate(5deg);">
+                                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400" alt="Data Analysis">
+                                    </div>
+                                    <div class="gallery-item" style="transform: rotate(-3deg);">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Statistics">
+                                    </div>
+                                </div>
+                                <div class="gallery-row">
+                                    <div class="gallery-item" style="transform: rotate(7deg);">
+                                        <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1189&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Code Analysis">
+                                    </div>
+                                    <div class="gallery-item" style="transform: rotate(-12deg);">
+                                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=400" alt="AI Visualization">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Open Source Contributions -->
+                <div class="feature-card feature-wide">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Open source contributions</h3>
+                        <p class="feature-description">Active contributor to open source projects with clean, documented code following industry best practices and design patterns.</p>
+                    </div>
+                    <div class="feature-skeleton">
+                        <div class="skeleton-three">
+                            <a href="https://github.com/neemlama" target="_blank" class="video-preview">
+                                <div class="play-button">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800" alt="GitHub Preview" class="video-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: System Architecture -->
+                <div class="feature-card feature-deploy">
+                    <div class="feature-content">
+                        <h3 class="feature-title">System architecture</h3>
+                        <p class="feature-description">Design scalable distributed systems with microservices, containerization, and cloud-native architectures for enterprise applications.</p>
+                    </div>
+                    <div class="feature-skeleton">
+                        <div class="skeleton-four">
+                            <div class="globe-container">
+                                <div class="globe">
+                                    <div class="globe-inner"></div>
+                                    <div class="globe-marker marker-1"></div>
+                                    <div class="globe-marker marker-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Skills Dock -->
+    <div class="floating-dock">
+        <div class="dock-container">
+            <div class="dock-item" data-skill="JavaScript">
+                <i class="devicon-javascript-plain"></i>
+                <span class="dock-tooltip">JavaScript</span>
+            </div>
+            <div class="dock-item" data-skill="Python">
+                <i class="devicon-python-plain"></i>
+                <span class="dock-tooltip">Python</span>
+            </div>
+            <div class="dock-item" data-skill="React">
+                <i class="devicon-react-original"></i>
+                <span class="dock-tooltip">React</span>
+            </div>
+            <div class="dock-item" data-skill="Node.js">
+                <i class="devicon-nodejs-plain"></i>
+                <span class="dock-tooltip">Node.js</span>
+            </div>
+            <div class="dock-item" data-skill="HTML5">
+                <i class="devicon-html5-plain"></i>
+                <span class="dock-tooltip">HTML5</span>
+            </div>
+            <div class="dock-item" data-skill="CSS3">
+                <i class="devicon-css3-plain"></i>
+                <span class="dock-tooltip">CSS3</span>
+            </div>
+            <div class="dock-item" data-skill="Git">
+                <i class="devicon-git-plain"></i>
+                <span class="dock-tooltip">Git</span>
+            </div>
+        </div>
+        
+        <!-- Mobile dock toggle -->
+        <div class="mobile-dock-toggle">
+            <i class="dock-menu-icon">☰</i>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="script.js"></script>
+</body>
+</html>

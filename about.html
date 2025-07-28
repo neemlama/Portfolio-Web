@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Neem J. Lama - Learn about my journey as a Computer Science graduate, education, experience, and passion for technology.">
+    <meta name="keywords" content="About, Computer Science Graduate, Education, Experience, Full-Stack Developer">
+    <title>About Me - Neem J. Lama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Critical CSS to prevent flash */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(248, 248, 248, 0.95);
+            color: #333;
+            transition: none;
+        }
+        html.dark-theme, html.dark-theme body {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            color: #e0e0e0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <script>
+        // Prevent flash of light theme by applying dark theme immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+                document.documentElement.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+                document.documentElement.style.color = '#e0e0e0';
+                // Also apply to body when it becomes available
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.classList.add('dark-theme');
+                });
+                // Apply immediately if body already exists
+                if (document.body) {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-navbar">
+        <div class="floating-nav-container">
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="projects.html" class="nav-item">
+                <span class="nav-icon">💼</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="about.html" class="nav-item active">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="skills.html" class="nav-item">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <span class="nav-icon">📧</span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a href="contact.html" class="nav-cta-button">
+                <span>Let's Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-subtitle">Passionate Computer Science Graduate & Full-Stack Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="content-title">My Journey</h2>
+                    <p class="content-paragraph">
+                        I'm a dedicated Computer Science graduate with a passion for creating innovative solutions 
+                        through code. My journey in technology began during my university years, where I discovered 
+                        the power of programming to solve real-world problems and create meaningful digital experiences.
+                    </p>
+                    <p class="content-paragraph">
+                        Throughout my academic journey, I've developed a strong foundation in software engineering 
+                        principles, data structures, algorithms, and modern web technologies. I specialize in 
+                        full-stack development with expertise in both frontend and backend technologies.
+                    </p>
+                    <p class="content-paragraph">
+                        What drives me is the constant opportunity to learn and grow in this ever-evolving field. 
+                        I'm particularly interested in artificial intelligence, machine learning, and building 
+                        scalable web applications that make a positive impact.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/pp1.jpg" alt="Neem J. Lama - Professional Photo" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section class="education-experience">
+        <div class="container">
+            <div class="timeline-grid">
+                <div class="timeline-section">
+                    <h2 class="timeline-title">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - 2024</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-heading">Bachelor of Computer Science</h3>
+                                <p class="timeline-location">Tribhuvan University</p>
+                                <p class="timeline-description">
+                                    Graduated with honors. Focused on software engineering, data structures, 
+                                    algorithms, and web development. Completed several major projects including 
+                                    AI-powered applications and full-stack web solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-heading">Foundation in Computer Science</h3>
+                                <p class="timeline-location">College Name</p>
+                                <p class="timeline-description">
+                                    Built strong fundamentals in programming, mathematics, and computer science 
+                                    principles. Achieved excellent grades in programming courses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h2 class="timeline-title">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-heading">Freelance Developer</h3>
+                                <p class="timeline-location">Remote</p>
+                                <p class="timeline-description">
+                                    Working on various web development projects for clients. Specializing in 
+                                    React.js applications, Node.js backends, and AI integration projects.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - 2024</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-heading">Software Development Intern</h3>
+                                <p class="timeline-location">Tech Company</p>
+                                <p class="timeline-description">
+                                    Gained hands-on experience in full-stack development, working with modern 
+                                    frameworks and contributing to production applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Interests -->
+    <section class="interests">
+        <div class="container">
+            <h2 class="section-title">Beyond Code</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <div class="interest-icon">🤖</div>
+                    <h3 class="interest-title">AI & Machine Learning</h3>
+                    <p class="interest-description">
+                        Exploring the latest developments in artificial intelligence and machine learning, 
+                        building models and experimenting with new algorithms.
+                    </p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">📚</div>
+                    <h3 class="interest-title">Continuous Learning</h3>
+                    <p class="interest-description">
+                        Always staying up-to-date with new technologies, frameworks, and best practices 
+                        through online courses, books, and tech communities.
+                    </p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🌐</div>
+                    <h3 class="interest-title">Open Source</h3>
+                    <p class="interest-description">
+                        Contributing to open source projects and sharing knowledge with the developer 
+                        community through code contributions and documentation.
+                    </p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🎮</div>
+                    <h3 class="interest-title">Game Development</h3>
+                    <p class="interest-description">
+                        Exploring game development as a creative outlet, experimenting with game engines 
+                        and interactive experiences in my spare time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Let's work together</h2>
+                <p class="cta-description">I'm always interested in new opportunities and collaborations</p>
+                <a href="contact.html" class="cta-button-large">Get In Touch ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neem J. Lama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

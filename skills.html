@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical Skills of Neem J. Lama - Programming languages, frameworks, tools, AI/ML expertise, and development technologies.">
+    <meta name="keywords" content="Skills, Programming Languages, Python, JavaScript, React, AI, Machine Learning, Web Development">
+    <title>Skills - Neem J. Lama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Critical CSS to prevent flash */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(248, 248, 248, 0.95);
+            color: #333;
+            transition: none;
+        }
+        html.dark-theme, html.dark-theme body {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            color: #e0e0e0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="skills.css">
+    <script>
+        // Prevent flash of light theme by applying dark theme immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+                document.documentElement.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+                document.documentElement.style.color = '#e0e0e0';
+                // Also apply to body when it becomes available
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.classList.add('dark-theme');
+                });
+                // Apply immediately if body already exists
+                if (document.body) {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-navbar">
+        <div class="floating-nav-container">
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="projects.html" class="nav-item">
+                <span class="nav-icon">💼</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="skills.html" class="nav-item active">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <span class="nav-icon">📧</span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a href="contact.html" class="nav-cta-button">
+                <span>Let's Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Skills Hero Section -->
+    <section class="skills-hero">
+        <div class="container">
+            <div class="skills-hero-content">
+                <h1 class="skills-title">Technical Skills</h1>
+                <p class="skills-subtitle">My expertise in programming languages, frameworks, and tools</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Categories -->
+    <section class="skills-categories">
+        <div class="container">
+            <div class="category-section">
+                <h2 class="category-title">Programming Languages</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-python-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-description">Advanced proficiency in Python for web development, data analysis, and machine learning</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-javascript-plain"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-description">Experienced in modern JavaScript, ES6+, DOM manipulation, and async programming</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-java-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Java</h3>
+                        <p class="skill-description">Strong foundation in object-oriented programming and enterprise application development</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-cplusplus-plain"></i>
+                        </div>
+                        <h3 class="skill-name">C++</h3>
+                        <p class="skill-description">Proficient in systems programming, algorithms, and data structures implementation</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-typescript-plain"></i>
+                        </div>
+                        <h3 class="skill-name">TypeScript</h3>
+                        <p class="skill-description">Experience with type-safe JavaScript development and modern frontend architectures</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-go-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Go</h3>
+                        <p class="skill-description">Backend development with Go for microservices and concurrent programming</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2 class="category-title">Web Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-react-original"></i>
+                        </div>
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-description">Building modern, responsive user interfaces with hooks and state management</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-nodejs-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Node.js</h3>
+                        <p class="skill-description">Server-side JavaScript development with Express.js and API creation</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-django-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Django</h3>
+                        <p class="skill-description">Full-stack web development with Django framework and REST APIs</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-html5-plain"></i>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-description">Semantic markup, accessibility best practices, and modern HTML features</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-css3-plain"></i>
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-description">Advanced styling with Flexbox, Grid, animations, and responsive design</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-mongodb-plain"></i>
+                        </div>
+                        <h3 class="skill-name">MongoDB</h3>
+                        <p class="skill-description">NoSQL database design, aggregation pipelines, and data modeling</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2 class="category-title">Machine Learning & AI</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-tensorflow-original"></i>
+                        </div>
+                        <h3 class="skill-name">TensorFlow</h3>
+                        <p class="skill-description">Deep learning model development and neural network architectures</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-pytorch-original"></i>
+                        </div>
+                        <h3 class="skill-name">PyTorch</h3>
+                        <p class="skill-description">Dynamic neural networks and research-oriented machine learning projects</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-pandas-original"></i>
+                        </div>
+                        <h3 class="skill-name">Pandas</h3>
+                        <p class="skill-description">Data manipulation, analysis, and preprocessing for machine learning workflows</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-numpy-original"></i>
+                        </div>
+                        <h3 class="skill-name">NumPy</h3>
+                        <p class="skill-description">Numerical computing and array operations for scientific applications</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span class="custom-icon">📊</span>
+                        </div>
+                        <h3 class="skill-name">Scikit-learn</h3>
+                        <p class="skill-description">Machine learning algorithms, model selection, and evaluation metrics</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span class="custom-icon">🤖</span>
+                        </div>
+                        <h3 class="skill-name">OpenAI API</h3>
+                        <p class="skill-description">Integration with GPT models and building AI-powered applications</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section">
+                <h2 class="category-title">Tools & Platforms</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-git-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Git</h3>
+                        <p class="skill-description">Version control, branching strategies, and collaborative development workflows</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-docker-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Docker</h3>
+                        <p class="skill-description">Containerization, microservices architecture, and deployment optimization</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-amazonwebservices-original"></i>
+                        </div>
+                        <h3 class="skill-name">AWS</h3>
+                        <p class="skill-description">Cloud computing services, EC2, S3, Lambda, and serverless architectures</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-linux-plain"></i>
+                        </div>
+                        <h3 class="skill-name">Linux</h3>
+                        <p class="skill-description">System administration, shell scripting, and server management</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-vscode-plain"></i>
+                        </div>
+                        <h3 class="skill-name">VS Code</h3>
+                        <p class="skill-description">Advanced IDE usage, extensions, debugging, and productivity optimization</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <span class="custom-icon">📊</span>
+                        </div>
+                        <h3 class="skill-name">Jupyter</h3>
+                        <p class="skill-description">Interactive data analysis, visualization, and machine learning experimentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Summary -->
+    <section class="skills-summary">
+        <div class="container">
+            <div class="summary-content">
+                <h2 class="summary-title">Continuous Learning</h2>
+                <p class="summary-description">
+                    As a computer science graduate, I'm committed to staying current with emerging technologies 
+                    and continuously expanding my skill set. I regularly engage with online courses, contribute 
+                    to open-source projects, and experiment with new frameworks and tools to enhance my expertise.
+                </p>
+                <div class="learning-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Technologies Mastered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Let's Work Together</h2>
+                <p class="cta-description">
+                    Interested in collaborating on a project or have questions about my technical skills?
+                </p>
+                <a href="contact.html" class="cta-button-large">
+                    Get In Touch
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neem J. Lama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="script.js"></script>
+    <script src="skills.js"></script>
+</body>
+</html>

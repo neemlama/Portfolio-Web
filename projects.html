@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Neem J. Lama - Explore my portfolio of web development, AI/ML, and software projects.">
+    <meta name="keywords" content="Projects, Portfolio, Web Development, AI, Machine Learning, React, Python">
+    <title>Projects - Neem J. Lama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Critical CSS to prevent flash */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(248, 248, 248, 0.95);
+            color: #333;
+            transition: none;
+        }
+        html.dark-theme, html.dark-theme body {
+            background-color: rgba(18, 18, 18, 0.95) !important;
+            color: #e0e0e0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <script>
+        // Prevent flash of light theme by applying dark theme immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+                document.documentElement.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';
+                document.documentElement.style.color = '#e0e0e0';
+                // Also apply to body when it becomes available
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.body.classList.add('dark-theme');
+                });
+                // Apply immediately if body already exists
+                if (document.body) {
+                    document.body.classList.add('dark-theme');
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-navbar">
+        <div class="floating-nav-container">
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="projects.html" class="nav-item active">
+                <span class="nav-icon">💼</span>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="skills.html" class="nav-item">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <span class="nav-icon">📧</span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a href="contact.html" class="nav-cta-button">
+                <span>Let's Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1 class="projects-title">My Projects</h1>
+                <p class="projects-subtitle">A showcase of my technical skills and problem-solving abilities</p>
+                <div class="projects-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Technologies used</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Years developing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="#" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <span class="project-icon">💻</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">E-Commerce Platform</h3>
+                        <p class="project-description">Full-stack e-commerce application with user authentication, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="#" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <span class="project-icon">🤖</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Image Classification AI</h3>
+                        <p class="project-description">Machine learning model for image classification using convolutional neural networks with 95% accuracy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="#" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <span class="project-icon">📊</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Data Visualization Dashboard</h3>
+                        <p class="project-description">Interactive dashboard for data analysis with real-time charts and filtering capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="#" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <span class="project-icon">📱</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Task Management App</h3>
+                        <p class="project-description">Cross-platform mobile application for task management with offline sync and collaboration features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="#" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <span class="project-icon">💬</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Chatbot Assistant</h3>
+                        <p class="project-description">Intelligent chatbot using natural language processing for customer service automation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Dialogflow</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="#" class="project-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <span class="project-icon">🏠</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Real Estate Platform</h3>
+                        <p class="project-description">Property listing website with advanced search filters, user profiles, and property management system.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Interested in working together?</h2>
+                <p class="cta-description">Let's discuss how I can contribute to your next project</p>
+                <a href="contact.html" class="cta-button-large">Get In Touch ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Neem J. Lama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
