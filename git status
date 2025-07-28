@@ -1,0 +1,142 @@
+[33mcommit 2e761afd406a39d9e16f5203a25aad627bac120c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: kazuha <lamaneem64@gmail.com>
+Date:   Mon Jul 28 17:56:06 2025 +0545
+
+    first commit
+
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0eb9f2f[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,277 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <script src="demo.js"></script>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <meta name="description" content="Neem J. Lama - Computer Science Graduate & Full-Stack Developer. Specialized in AI/ML, web development, and modern software solutions.">[m
+[32m+[m[32m    <meta name="keywords" content="Computer Science, Full-Stack Developer, AI, Machine Learning, React, Python, JavaScript, Portfolio">[m
+[32m+[m[32m    <meta name="author" content="Neem J. Lama">[m
+[32m+[m[41m    [m
+[32m+[m[32m    <!-- Open Graph / Facebook -->[m
+[32m+[m[32m    <meta property="og:type" content="website">[m
+[32m+[m[32m    <meta property="og:url" content="">[m
+[32m+[m[32m    <meta property="og:title" content="Neem J. Lama - CS Graduate & Developer">[m
+[32m+[m[32m    <meta property="og:description" content="Computer Science Graduate & Full-Stack Developer specialized in AI/ML and modern web technologies.">[m
+[32m+[m[32m    <meta property="og:image" content="assets/pp-rbg.png">[m
+[32m+[m[41m    [m
+[32m+[m[32m    <!-- Twitter -->[m
+[32m+[m[32m    <meta property="twitter:card" content="summary_large_image">[m
+[32m+[m[32m    <meta property="twitter:title" content="Neem J. Lama - CS Graduate & Developer">[m
+[32m+[m[32m    <meta property="twitter:description" content="Computer Science Graduate & Full-Stack Developer specialized in AI/ML and modern web technologies.">[m
+[32m+[m[32m    <meta property="twitter:image" content="assets/pp-rbg.png">[m
+[32m+[m[41m    [m
+[32m+[m[32m    <title>Neem J. Lama - CS Graduate & Developer</title>[m
+[32m+[m[32m    <link rel="preconnect" href="https://fonts.googleapis.com">[m
+[32m+[m[32m    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>[m
+[32m+[m[32m    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">[m
+[32m+[m[32m    <style>[m
+[32m+[m[32m        /* Critical CSS to prevent flash */[m
+[32m+[m[32m        html, body {[m
+[32m+[m[32m            margin: 0;[m
+[32m+[m[32m            padding: 0;[m
+[32m+[m[32m            background-color: rgba(248, 248, 248, 0.95);[m
+[32m+[m[32m            color: #333;[m
+[32m+[m[32m            transition: none;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        html.dark-theme, html.dark-theme body {[m
+[32m+[m[32m            background-color: rgba(18, 18, 18, 0.95) !important;[m
+[32m+[m[32m            color: #e0e0e0 !important;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    </style>[m
+[32m+[m[32m    <link rel="stylesheet" href="styles.css">[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m        // Prevent flash of light theme by applying dark theme immediately[m
+[32m+[m[32m        (function() {[m
+[32m+[m[32m            const savedTheme = localStorage.getItem('theme');[m
+[32m+[m[32m            if (savedTheme === 'dark') {[m
+[32m+[m[32m                document.documentElement.classList.add('dark-theme');[m
+[32m+[m[32m                document.documentElement.style.backgroundColor = 'rgba(18, 18, 18, 0.95)';[m
+[32m+[m[32m                document.documentElement.style.color = '#e0e0e0';[m
+[32m+[m[32m                // Also apply to body when it becomes available[m
+[32m+[m[32m                document.addEventListener('DOMContentLoaded', function() {[m
+[32m+[m[32m                    document.body.classList.add('dark-theme');[m
+[32m+[m[32m                });[m
+[32m+[m[32m                // Apply immediately if body already exists[m
+[32m+[m[32m                if (document.body) {[m
+[32m+[m[32m                    document.body.classList.add('dark-theme');[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m[32m        })();[m
+[32m+[m[32m    </script>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body class="has-floating-dock">[m
+[32m+[m[32m    <!-- Floating Navigation -->[m
+[32m+[m[32m    <nav class="floating-navbar">[m
+[32m+[m[32m        <div class="floating-nav-container">[m
+[32m+[m[32m            <a href="index.html" class="nav-item active">[m
+[32m+[m[32m                <span class="nav-icon">🏠</span>[m
+[32m+[m[32m                <span class="nav-text">Home</span>[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <a href="projects.html" class="nav-item">[m
+[32m+[m[32m                <span class="nav-icon">💼</span>[m
+[32m+[m[32m                <span class="nav-text">Projects</span>[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <a href="about.html" class="nav-item">[m
+[32m+[m[32m                <span class="nav-icon">👤</span>[m
+[32m+[m[32m                <span class="nav-text">About</span>[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <a href="skills.html" class="nav-item">[m
+[32m+[m[32m                <span class="nav-icon">⚡</span>[m
+[32m+[m[32m                <span class="nav-text">Skills</span>[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <a href="contact.html" class="nav-item">[m
+[32m+[m[32m                <span class="nav-icon">📧</span>[m
+[32m+[m[32m                <span class="nav-text">Contact</span>[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <a href="contact.html" class="nav-cta-button">[m
+[32m+[m[32m                <span>Let's Connect</span>[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </nav>[m
+[32m+[m
+[32m+[m[32m    <!-- Hero Section -->[m
+[32m+[m[32m    <section class="hero">[m
+[32m+[m[32m        <div class="hero-container">[m
+[32m+[m[32m            <div class="hero-left">[m
+[32m+[m[32m                <div class="stats">[m
+[32m+[m[32m                    <div class="stat-item">[m
+[32m+[m[32m                        <span class="stat-number">15+</span>[m
+[32m+[m[32m                        <span class="stat-label">Projects completed</span>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div class="stat-item">[m
+[32m+[m[32m                        <span class="stat-number">3+</span>[m
+[32m+[m[32m                        <span class="stat-label">Years experience</span>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[41m                [m
+[32m+[m[32m                <div class="hero-text">[m
+[32m+[m[32m                    <h1 class="hero-title">Hello</h1>[m
+[32m+[m[32m                    <p class="hero-subtitle">I'm Neem J. Lama <br> Computer Science Graduate & Developer</p>[m
+[32m+[m[32m                </div>[m
+[32m+[m[41m                [m
+[32m+[m[32m                <div class="scroll-indicator">[m
+[32m+[m[32m                    <span>Scroll down</span>[m
+[32m+[m[32m                    <div class="scroll-arrow">↓</div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[41m            [m
+[32m+[m[32m            <div class="hero-right">[m
+[32m+[m[32m                <div class="profile-image-container">[m
+[32m+[m[32m                    <img src="assets/pp-rbg.png" alt="Profile Picture" class="profile-image">[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <!-- Features Section -->[m
+[32m+[m[32m    <section class="features-section">[m
+[32m+[m[32m  
