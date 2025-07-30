@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             floatingNav.classList.add('vertical-dock');
             // Force positioning for vertical dock - center of viewport
             floatingNav.style.position = 'fixed';
-            floatingNav.style.top = '50%';
+            floatingNav.style.top = '10vh';
             floatingNav.style.left = '2rem';
             floatingNav.style.transform = 'translateY(-50%)';
             floatingNav.style.zIndex = '9999';

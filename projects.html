@@ -50,23 +50,23 @@
     <nav class="floating-navbar">
         <div class="floating-nav-container">
             <a href="index.html" class="nav-item">
-                <span class="nav-icon">🏠</span>
+                <span class="nav-icon"><i data-lucide="house"></i></span>
                 <span class="nav-text">Home</span>
             </a>
             <a href="projects.html" class="nav-item active">
-                <span class="nav-icon">💼</span>
+                <span class="nav-icon"><i data-lucide="briefcase"></i></span>
                 <span class="nav-text">Projects</span>
             </a>
             <a href="about.html" class="nav-item">
-                <span class="nav-icon">👤</span>
+                <span class="nav-icon"><i data-lucide="user"></i></span>
                 <span class="nav-text">About</span>
             </a>
             <a href="skills.html" class="nav-item">
-                <span class="nav-icon">⚡</span>
+                <span class="nav-icon"><i data-lucide="zap"></i></span>
                 <span class="nav-text">Skills</span>
             </a>
             <a href="contact.html" class="nav-item">
-                <span class="nav-icon">📧</span>
+                <span class="nav-icon"><i data-lucide="mail"></i></span>
                 <span class="nav-text">Contact</span>
             </a>
             <a href="contact.html" class="nav-cta-button">
@@ -284,12 +284,20 @@
     <!-- Theme Toggle Button -->
     <div class="theme-toggle">
         <button class="theme-btn" id="themeToggle">
-            <span class="sun-icon">☀️</span>
-            <span class="moon-icon">🌙</span>
+            <span class="sun-icon"><i data-lucide="sun"></i></span>
+            <span class="moon-icon"><i data-lucide="moon"></i></span>
         </button>
     </div>
 
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="script.js"></script>
     <script src="projects.js"></script>
+    <script>
+        // Initialize Lucide icons after page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
 </body>
 </html>
